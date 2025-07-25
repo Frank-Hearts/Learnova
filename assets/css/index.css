@@ -647,6 +647,9 @@ footer{
     .all-reasons{
         grid-template-columns: repeat(1,1fr);
     }
+    .copyright{
+        text-align: center;
+    }
 }
 footer a{
   color:var(--accent);
