@@ -76,7 +76,13 @@
 /* end of hero section */
 
 /* input section */
-
+.error-msg{
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
 
 .login-box h4{
     text-align: center;

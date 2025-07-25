@@ -9,3 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
         content.style.display = 'flex';
     }, 4000)
 });
+
+const leftBar = document.querySelector('.sidebar-2');
+const bars = document.getElementById('toggle-icon');
+bars.addEventListener('click', () => {
+    leftBar.classList.toggle('show');
+    bars.classList.toggle('show');
+    document.body.classList.toggle('no-scroll');
+});

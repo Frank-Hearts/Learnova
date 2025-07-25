@@ -604,8 +604,11 @@ footer{
     .topnavbar{
         display: none;
     }
+    .navbar-right{
+        display: none;
+    }
     .nav-toggle-1{
-        display: show;
+        display: block;
     }
     .login{
         display: none;

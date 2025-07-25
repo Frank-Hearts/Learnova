@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const isHidden = input.type === 'password';
       input.type = isHidden ? 'text' : 'password';
 
-      icon.classList.toggle('fa-eye');
       icon.classList.toggle('fa-eye-slash');
+      icon.classList.toggle('fa-eye');
     });
   }
 
