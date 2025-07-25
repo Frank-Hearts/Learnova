@@ -1,0 +1,473 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color: rgb(12, 12, 74);
+  --secondary-color: #f8f9fc;
+  --accent-color: #4b67bc;
+  --text-color: #2e59d9;
+}
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+.preloader-image {
+  width: 450px;
+  height: 180px;
+  animation: zoom-in-out 2.4s ease-in-out infinite;
+}
+@keyframes zoom-in-out{
+  0%{
+      transform: scale(1);
+  }
+  50%{
+      transform: scale(1.3);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
+.all-dashboard{
+  display: flex;
+}
+.sidebar{
+  background: var(--primary-color);
+  height: 100vh;
+  color: white;
+  overflow-y: scroll;
+  width: 19%;
+  transition: all 0.3s;
+  line-height: 40px;
+}
+.sidebar::-webkit-scrollbar{
+  width: 5px;
+}
+.sidebar-logo{
+  padding: 20px;
+}
+.sidebar-logo img{
+  display: block;
+  align-items: center;
+  justify-self: center;
+  width: 160px;
+}
+.sidebar label, .other label{
+  font-family: 'Poppins', sans-serif;
+  font-size: 10.5px;
+  padding-left: 20px;
+}
+.side-item{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 0 0 0 30px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.side-item:hover{
+  background-color: #0b2bab;
+  color: var(--secondary-color);
+}
+.side-item-dashboard a{
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.side-item-dashboard {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border-left:  0.1rem solid white;
+  padding: 0 0 0 30px;
+  background-color: #111f59;
+}
+.side-item i{
+  color: var(--accent-color);
+  transform-style: preserve-3d;
+  transition: 0.5s ease-in;
+}
+.side-item:hover i{
+  color: var(--secondary-color);
+  transform: rotateY(180deg);
+}
+.side-item a{
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+  height: 32vh;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.1);
+  gap: 16px;
+  padding: 8px 0 8px 0;
+  align-items: center;
+  object-fit: cover;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}   
+
+/*============================== Nav-Bar =====================*/
+.all-navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--secondary-color);
+}
+.navbar-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.toggle-icon{
+  display: none;
+}
+.search input{
+  outline: none;
+  border: none;
+  background: none;
+}
+.search input::placeholder{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: fit-content;
+}
+.nav-right img{
+  width: 32px;
+  border-radius: 100%;
+}
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+/*========================== End of nav bar =====================*/
+
+/*========================== Welcome  card =====================*/
+
+.all-main-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  gap: 24px;
+  z-index: -900;
+}
+.main-content-left{
+  width: 70%;
+  padding: 22px;
+}
+.main-content-right{
+  width: 30%;
+}
+.main-content {
+  width: 81%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.main-content::-webkit-scrollbar {
+  width: 5px;
+}
+.welcome-card-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.1);
+}
+.all-card-title h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: rgb(9, 9, 123);
+}
+.card-text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: black;
+}
+.all-card-title{
+  padding: 20px;
+}
+/*========================== end of Welcome  card =====================*/
+
+/*===================== Progress Bar ===============*/
+.learning-header h5{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 50px 0 10px 0;
+}
+.current-course-header h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 50px 0 0px 0;
+}
+.all-learning{
+  width: 100%;
+}
+.course-body{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+}
+.course-pro{
+  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+  padding: 10px 40px;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.1);
+}
+.course-pro h5{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.current-course-content{
+  display: flex;
+  gap: 18px;
+  padding: 8px 0 20px 0;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.current-course-content::-webkit-scrollbar{
+  display: none;
+}
+.web-dev img, .data-science img, .digital-marketing img, .cybersecurity img{
+  border-radius: 5px;
+}
+.web-dev, .data-science, .digital-marketing, .cybersecurity{
+  min-width: 280px;
+  scroll-snap-align: start;
+  border-radius: 5px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.web-dev h3, .data-science h3, .digital-marketing h3, .cybersecurity h3{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.web-dev p span, .data-science p span, .digital-marketing p span, .cybersecurity p span{
+  display: block;
+  text-align: start;
+  font-size: 16px;
+  font-weight:500;
+  font-family:'Poppins', sans-serif;
+  font-size: 14px;
+}
+.web-dev p span:last-child, .data-science p span:last-child, .digital-marketing p span:last-child, .cybersecurity p span:last-child{
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  text-align: start;
+  font-weight: 200;
+  color: black;
+}
+.rate i{
+  color: gold;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+.outer-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.inner-bar-1{
+  width: 78%;
+  background-color: green;
+  height: 10px;
+  border-radius: 10px;
+}
+.inner-bar-2{
+  width: 55%;
+  background-color: rgb(32, 32, 180);
+  height: 10px;
+  border-radius: 10px;
+}
+.inner-bar-3{
+  width: 20%;
+  background-color: rgb(235, 26, 26);
+  height: 10px;
+  border-radius: 10px;
+}
+.inner-bar-4{
+  width: 35%;
+  background-color: var(--primary-color);
+  height: 10px;
+  border-radius: 10px;
+}
+.card-body{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border: none;
+}
+.card-body::-webkit-scrollbar{
+  display: none;
+}
+.card-1{
+  min-width: 280px;
+  min-height: 194px;
+  scroll-snap-align: start;
+  border-radius: 5px;
+  padding: 20px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+.card-text-content{
+  display: block;
+  text-align: start;
+}
+.web-dev img, .data-science img, .digital-marketing img, .cybersecurity img{
+  border-radius: 5px;
+}
+.web-dev, .data-science, .digital-marketing, .cybersecurity{
+  min-width: 260px;
+  scroll-snap-align: start;
+  border-radius: 5px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.web-dev h3, .data-science h3, .digital-marketing h3, .cybersecurity h3{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.web-dev p, .data-science p, .digital-marketing p, .cybersecurity p{
+  text-align: start;
+  font-size: 12px;
+  font-weight:400;
+  font-family:'Poppins', sans-serif;
+}
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating button{
+  border-radius: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 4px 8px;
+}
+.rating button:hover{
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+.rating-icon i{
+  color: gold;
+  font-size: 8px;
+  padding-bottom: 10px;
+}
+.recommended-course-header h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 80px 0 0 0;
+}
+.recommended-course-content{
+  display: flex;
+  gap: 18px;
+  padding: 6px 0;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.recommended-course-content::-webkit-scrollbar{
+  display: none;
+}
+.recommended{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.recommended p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  padding-top: 18px;
+}
+.recommended img{
+  width:30px;
+  height: 30px;
+  border-radius: 100px;
+}
+.footer{
+  background-color: #f0f0f0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.footer p{
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding: 20px 0 40px 0;
+}
+@media (max-width: 1000px){
+  .preloader-image {
+    width: 250px;
+    height: 100px;
+  }
+}

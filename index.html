@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icon/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Learnova - Learn anytime, Learn anywhere</title>
+</head>
+<body class="body">
+
+    <div id="preloader">
+       <img src="./assets/img/11.png" alt="Loading Learnova..." />
+    </div>
+    <!----================== start of nav-bar ==============--->
+    <div class="topnavbar">
+        <h3>Make it worthwhile | <span class="lighter-head">The skills for the future — Now on sale!</span></h3> 
+        <h4>Ends in 8h 35m 32s</h4>
+    </div>
+    <div class="all-navbar">
+        <div class="navbar-content margin">
+            <div class="navbar-logo align-center">
+                <img src="./assets/img/learnova logo.png" alt="logo" width="150px">
+            </div>
+            <div class="navbar-center">
+                <div class="searchbox flex">
+                    <div class="search-icon">
+                        <i class="fa fa-search">
+                    </i>
+                    </div>
+                    <input type="search" placeholder="Search for courses, instructors, etc..." class="searchbox">
+                </div>
+            </div>
+            <div class="navbar-right">
+                <div class="learnova-courses">
+                    <a href="">Courses On Learnova</a>
+                </div>
+                <div class="globe">
+                    <i class="fa fa-globe"></i>
+                </div>
+                <button class="login" onclick="showPreloaderAndRedirect('login.htm')">Log in</button>
+                <button class="signup" onclick="showPreloaderAndRedirect('signup.html')">Sign Up</button>
+                <div class="nav-toggle-1">
+                    <i class="fa fa-bars" id="nav-toggle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----================== End of nav-bar ==============--->
+
+    <!-----================== start of Hero-Section ===============---->
+
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="./vid/1472584_Education_People_1280x720.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content margin">
+            <h2 data-aos="fade-up" data-aos-duration="2000">Learn Skills, Build Your Future</h2>
+            <p data-aos="fade-up" data-aos-duration="2000">Premium courses from industry professionals. Study at your own pace, anytime, anywhere.</p>
+
+            <div class="browse"> 
+                <button class="main-btn" onclick="showPreloaderAndRedirect('login.html')" data-aos="fade-left" data-aos-duration="2000">Browse Courses</button>
+                <button class="main-btn-1" onclick="showPreloaderAndRedirect('signup.html')" data-aos="fade-right" data-aos-duration="2000">Get Started</button>           
+            </div>
+        </div>
+    </section>
+    <!-- --------=================== End of Hero-Section ======================--------------------->
+
+    <!--===================== About section ============================-->
+
+    <div class="blog-section">
+        <div class="blog-container margin">
+            <div class="blog-image" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/img/about-img.jpg" alt="Learning illustration" />
+            </div>
+            <div class="blog-content" data-aos="fade-up" data-aos-duration="2000">
+                <h2 data-aos="fade-up" data-aos-duration="2000">Welcome to Learnova — Unlock Knowledge, Anytime, Anywhere</h2>
+                <p data-aos="fade-up" data-aos-duration="2000">
+                At <strong>Learnova</strong>, we believe education should be flexible, engaging, and accessible to everyone — no matter where you are or what you want to learn.
+                </p>
+                <p>
+                Whether you're diving into <strong>web development</strong>, mastering <strong>digital marketing</strong>, or exploring the world of <strong>AI and data science</strong>, Learnova connects you with expert-led video courses designed to fit your schedule and skill level. Our platform blends <strong>practical learning</strong> with real-world projects, so you're not just watching — you're <strong>building</strong>.
+                </p>
+                <div class="what-sets" data-aos="fade-up" data-aos-duration="1000">
+                    <p><strong>What Sets Us Apart?</strong></p>
+                </div>
+                <ul>
+                <li><strong>Expert Instructors</strong>: Learn from industry pros with hands-on experience</li>
+                <li><strong>Bite-sized Lessons</strong>: Learn at your pace, anytime, anywhere</li>
+                <li><strong>Interactive Projects</strong>: Apply your skills with real-world challenges</li>
+                <li><strong>Mobile Friendly</strong>: Learn from your phone, tablet, or desktop</li>
+                <li><strong>Certificates</strong>: Showcase your skills with shareable course certificates</li>
+                </ul>
+                <p>
+                Join thousands of learners who've transformed their skills and careers with Learnova. This is more than online learning — this is your <strong>next step forward</strong>.
+                </p>
+                <a  href="#">
+                   <button class="about-btn" data-aos="fade-up" data-aos-duration="1000">Read More...</button>
+                </a> 
+            </div>
+        </div>
+   </div>
+    <!--===================== end of About section ============================-->
+
+    <!--====================== start of Courses section =====================-->
+    <section class="courses margin" data-aos="fade-up" data-aos-duration="1000" id="courses">
+        <h2 data-aos="fade-up" data-aos-duration="2000">Get Our Top Courses</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">Explore our most popular courses from reputable teachers designed to help you succeed in your career.</p>
+        <div class="course-list margin" data-aos="fade-up" data-aos-duration="2000">
+            <div class="course" data-aos="fade-up" data-aos-duration="2000">
+                <img src="./assets/img/web dev.jpg" alt="Web Design"></img>
+                <h3>Web Development</h3>
+                <div class="cost">
+                    <i class="fa fa-naira-sign"></i>
+                    <p>120,000</p>
+                </div>                
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    <span>By:  Mr. Daniel Ezeali</span>
+                    <span>Learn how to design stunning and functional websites from scratch.</span>
+                </p>
+                <div class="cart">                    
+                    <button id="cart">Get Started</button>
+                </div>                  
+            </div>
+            <div class="course" data-aos="fade-up" data-aos-duration="2000">
+                <img src="./assets/img/data science.jpg" alt="Data Science" width="100%"></img>
+                <h3>Data Science</h3>
+                <div class="cost">
+                    <i class="fa fa-naira-sign"></i>
+                    <p>100,000</p>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>
+                    <span>By:  Mrs. Francisca. C. James</span>
+                    <span>Dive into the world of data in analysis and machine learning.</span>
+                </p>
+                <div class="cart">                    
+                    <button id="cart">Get Started</button>
+                </div> 
+            </div>
+            <div class="course" data-aos="fade-up" data-aos-duration="2000">
+                <img src="./assets/img/cybers.jpg" alt="cybersecurity"></img>
+                <h3>Cyber Security</h3>
+                <div class="cost">
+                    <i class="fa fa-naira-sign"></i>
+                    <p>140,000</p>
+                </div>                
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    <span>By:  Mr. Chijioke Prosper</span>
+                    <span>Protect systems and networks from cyber threats with this crash course.</span>
+                </p>
+                <div class="cart">                    
+                    <button id="cart">Get Started</button>
+                </div> 
+            </div>
+            <div class="course" data-aos="fade-up" data-aos-duration="2000">
+                <img src="./assets/img/data science.jpg" alt="Digital Marketing"></img>
+                <h3>Digital Marketing</h3>
+                <div class="cost">
+                    <i class="fa fa-naira-sign"></i>
+                    <p>90,000</p>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    <span>By:  Miss. Racheal Wong</span>
+                    <span>Master the art of online marketing, branding, and content strategies.</span>
+                </p>
+                <div class="cart">                    
+                    <button id="cart">Get Started</button>
+                </div> 
+            </div>
+        </div>
+   </section>
+    <!--================ End of Courses section ===========-->
+
+<!--==================== start of Reasons for Learning section ==================-->
+<div class="reasons-2" data-aos="fade-up" data-aos-duration="2000">
+    <section class="reasons margin" data-aos="fade-up" data-aos-duration="2000">
+        <h2 data-aos="fade-up" data-aos-duration="2000">Why Learn With Learnova</h2>
+        <p data-aos="fade-up" data-aos-duration="2000">Join a thriving community of enthusiastic learners<span>gaining real skills through expert-led, high quality courses - Built with expertise, care and transparency.</span></p>
+        <div class="all-reasons">
+            <div class="all-experts" data-aos="fade-up" data-aos-duration="2000">
+                <img src="./assets/img/about-img.jpg" alt="" data-aos="fade-up" data-aos-duration="2000">
+                <div class="experts-a" data-aos="fade-up" data-aos-duration="2000">
+                    <i class="fa fa-people-group"></i>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry experts with years of experience and practical knowledge in their fields.</p>
+                </div>
+            </div>
+            <div class="all-experts">
+                <img src="./assets/img/co-workers-interacting.jpg" alt="" data-aos="fade-up" data-aos-duration="2000">
+                <div class="experts-b" data-aos="fade-up" data-aos-duration="2000">
+                    <i class="fa fa-globe"></i>
+                    <h3>Interactive Community</h3>
+                    <p>Engage, share ideas and grow with learners like you all over the world. Collaboration through discussions, feedback and real-time interactions is supported.</p>
+                </div>
+            </div>
+            <div class="all-experts-c" data-aos="fade-up" data-aos-duration="2000">
+                <div class="experts-c">
+                    <i class="fa fa-person"></i>
+                    <h3>Convenient Learning</h3>
+                    <p>Enjoy a convenient learning experience that fits your schedule.Learn anytime, anywhere, and at your own pace.</p>
+                </div>
+               <img src="./assets/img/medium-shot-students.jpg" alt="" data-aos="fade-up" data-aos-duration="2000">
+            </div>
+        </div>
+    </section>
+</div>
+<!--=================== End of Reasons for Learning section =====================-->
+
+    <!--====================== start of Testimonials section =================-->
+  <section id="testimonials" class="testimonials margin" data-aos="fade-up" data-aos-duration="2000">
+        <h2>What Learnova Graduates Say</h2>
+        <div class="testimonials-cards" data-aos="fade-up" data-aos-duration="2000">
+            <article class="card-1" data-aos="fade-up" data-aos-duration="2000">
+                <h3 data-aos="fade-up" data-aos-duration="1000">
+                “The Web Development course was thorough and hands-on. I landed a job within two months!”
+                </h3>
+                <div class="img-card">
+                    <img src="./assets/img/5.jpg" alt="Learner 3">
+                    <p>-- Nkechi M.</p>
+                </div>
+                    
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+            </article>
+
+            <article class="card-1" data-aos="fade-up" data-aos-duration="1000">
+                <h3 data-aos="fade-up" data-aos-duration="1000">
+                “Fantastic graphic designs course contents and helpful mentors. Highly recommended!”
+                </h3>
+                <div class="img-card">
+                    <img src="./assets/img/6.jpg" alt="Learner 3">
+                    <p>-- Nkechi M.</p>
+                </div>
+
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+            </article>
+
+            <article class="card-1" data-aos="fade-up" data-aos-duration="1000">
+                <h3 data-aos="fade-up" data-aos-duration="1000">
+                “The data science projects boosted my portfolio. Loved every bit of it.”
+                </h3>
+                <div class="img-card">
+                    <img src="./assets/img/stylish-african-american-plus-size-model-against-wooden-cafe-winter-day.jpg" alt="Learner 3">
+                    <p>-- Nkechi M.</p>
+                </div>
+                
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+            </article>
+        </div>
+  </section>
+
+    <!--======================== End of Testimonials =====================-->
+
+
+    <!--======================= start of footer section ====================-->
+    <footer id="contact" data-aos="fade-up" data-aos-duration="2000">
+        <div class="margin footer-grid">
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="">About us</a>
+            <a href="">Blog</a>
+            <!-- <a href=""></a>
+            <a href=""></a> -->
+            <a href="">Web/Software Development</a>
+            <a href="">CyberSecurity</a>
+            <a href="">Data Science</a>
+            <a href="">Photoshop Essentials</a>
+        </div>
+        <div class="social-media" data-aos="fade-up" data-aos-duration="2000">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>
+                    <span>Email:<a href="froshguy04@gmail.com">support@learnova.com</a></span>
+                    <span>Phone:<a href="">+234-705-463-1754</a></span>
+                    <span>Address: Mile 50, Abakaliki, Ebonyi, Nigeria</span>
+                </p>
+           </div>
+            <h3>Follow Us At:</h3>
+            <div class="socials flex">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>·
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>·
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="all-newsletter" data-aos="fade-up" data-aos-duration="2000">
+            <h3>Newsletter</h3>
+            <p>Stay up to date with new courses and promos.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        </div>
+        <p class="copyright" data-aos="fade-up" data-aos-duration="2000">
+            <span>&copy; 2025 Learnova.</span>
+            <span>Developed by Frank-Hearts Dev.</span>
+            <span>All rights reserved.</span>
+        </p>
+  </footer>
+    <!--================ End of footer section ================-->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <link rel="stylesheet" href="./dist/js/bootstrap.min.js">
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/preloader.js" defer></script>
+</body>
+</html>

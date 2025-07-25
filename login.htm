@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icon/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Login to Learnova</title>
+</head>
+<body>
+    
+    <div id ="preloader">
+        <img src="./assets/img/11.png" alt="preloader image" class="preloader-image">
+    </div>
+    <div class="all-login">
+
+        <!-- hero-section -->
+        <div class="page margin">
+            <div class="page-content">
+                <div class="page-right">
+                    <p><a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> Login</p>
+                </div>
+           </div>
+        </div>
+        <!-- end of hero-section -->
+
+        <!-- input section -->
+
+        <div class="login-box margin">
+            <h4>Login To Learnova</h4>
+            <p>Get access to your Orders, Wishlist and Recommendations.</p>
+            <form id="login-form" method="post">
+                <div class="email-details">
+                    <input type="email" name="email" id="login-email" placeholder="" required>
+                    <label for="">Email</label>
+                    <span class="error-msg" id="login-email-error"></span>
+                </div>
+                <div class="password-details">
+                    <input type="password" name="password" id="login-password" placeholder="" required>
+                    <span class="toggle-password fa fa-eye" id="toggle-password" style="cursor:pointer;"></span>
+                    <label for="">Password</label>
+                    <span class="error-msg" id="login-password-error"></span>
+                </div>
+                <div class="forget">
+                    <a href="">Forgot Password?</a>
+                </div>
+                <div class="create">
+                    <div class="create-left">
+                    <a class="login-link" data-target="signup.html">Create account</a>
+                    </div>
+                    <div class="create-right">
+                        <button id="login" type="submit">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end of input section -->
+    </div>
+
+    <script src=".assets/js/login.js"></script>
+    <script src="./assets/js/preloader.js"></script>
+    <script src=".assets/js/preloader-nav.js"></script>
+    <script src="./dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

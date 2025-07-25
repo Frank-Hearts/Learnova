@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icon/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Sign Up to Learnova</title>
+</head>
+<body>
+    <div id="preloader">
+      <img src="./assets/img/11.png" alt="Loading..." />
+   </div>
+
+    <div class="page margin">
+        <div class="page-content">
+            <div class="page-right">
+                <p><a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> Sign Up</p>
+            </div>
+        </div>
+   </div>
+  <div class="signup-box margin">
+    <form id="signup-form" method="POST">
+      <h2>Sign Up with Learnova</h2>
+      <p>Join Learnova today and start your journey to smarter and industrious learning.</p>
+
+      <div class="input-group">
+        <input type="text" id="fullname" placeholder=" " required />
+        <label for="fullname">Full Name</label>
+        <span class="error-msg" id="fullname-error"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" placeholder=" " required />
+        <label for="email">Email Address</label>
+        <span class="error-msg" id="email-error"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="signup-password" placeholder=" " required />
+        <label for="signup-password">Password</label>
+        <span class="toggle-password"><i id="toggle-password" class="fa fa-eye"></i></span>
+        <span class="error-msg" id="signup-password-error"></span>
+      </div>
+      <div class="input-group">
+        <input type="password" id="confirm-password" placeholder=" " required />
+        <label for="signup-password">Confirm Passsword</label>
+        <span class="toggle-confirm-password"><i id="toggle-confirm-password" class="fa fa-eye"></i></span>
+        <span class="error-msg" id="confirm-password-error"></span>
+      </div>
+
+      <button type="submit" class="signup-btn">Sign Up</button>
+
+      <div class="divider">or</div>
+
+      <button type="button" class="google-btn">
+        <img src="./assets/img/google-icon.png" alt="Google">
+        Sign up with Google
+      </button>
+
+      <div class="already">
+        <span>Already have an account?</span>
+        <a class="login-link" data-target="login.htm">Login</a>
+      </div>
+    </form>
+  </div>
+
+ <script src="./assets/js/signup.js"></script>
+ <script src="./dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ <script src="./assets/js/preloader-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/profile.css"/>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icon/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Profile - Learnova</title>
+</head>
+<body>
+  <div class="all-profile">
+    <!--=========================== Sidebar ================-->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+          <img src="./assets/img/11.png" alt="" width="80%">
+        </div>
+  
+        <label>General</label>
+        <div class="side-item">
+          <i class="fa fa-tachometer-alt"></i>
+          <a class="side-link" href="./dashboard.html">Dashboard</a>
+        </div>
+        <div class="side-item">
+          <i class="fa fa-book-open"></i>
+          <a class="side-link" href="./enrolled.html">Enrolled Courses</a>
+        </div>
+        <div class="side-item-profile">
+          <i class="fa fa-person"></i>
+          <a class="side-link-active" href="#">Profile Info</a>
+        </div>
+        <div class="side-item">
+          <i class="fa fa-medal"></i>
+          <a class="side-link" href="#">Quiz Attempts</a>
+        </div>
+        <div class="side-item">
+          <i class="fa fa-star"></i>
+          <a class="side-link" href="#">Recommended</a>
+        </div>
+        <div class="side-item">
+          <i class="fa fa-dollar"></i>
+          <a class="side-link" href="./pricing.html">Pricing</a>
+        </div>
+  
+  
+        <div class="other">
+          <label>Other User Pages</label>
+          <div class="side-item">
+            <i class="fa fa-cog"></i>
+            <a class="side-link" href="#">Account Settings</a>
+          </div>
+          <div class="side-item">
+            <i class="fa fa-question-circle"></i>
+            <a class="side-link" href="#">Support</a>
+          </div>
+          <div class="side-item">
+            <i class="fa fa-arrow-up-from-bracket"></i>
+            <a class="side-link" href="#">Log out</a>
+          </div>
+        </div>
+      </div>
+    <!-- =============== end of sidebar ================= -->
+    <div class="main-content">
+
+      <!--====================== navbar  ==============-->
+      <div class="all-navbar">
+        <div class="navbar-content">
+          <div class="nav-left">
+            <div class="toggle-icon">
+              <i class="fa fa-bars"></i>
+            </div>
+            <div class="search">
+              <input type="search" placeholder="Search for courses...">
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+          <div class="nav-right">
+            <i class="fa fa-bell"></i>
+            <i class="fa fa-globe"></i>
+            <div class="nav-right-img">
+              <img src="./assets/img/profile-pic-illutrations.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--====================== end of navbar  ==============-->
+
+      <div class="all-main-content">
+        <div class="profile-container">
+          <h3>Profile Information</h3>
+          <form class="profile-form">
+            <div class="form-left">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Frank">
+  
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Frank-Hearts">
+            </div>
+  
+            <div class="form-right">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Madunagu">
+  
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+234-819-4784-9849">
+            </div>
+  
+            <div class="form-bio">
+              <label for="bio">Bio</label>
+              <textarea id="bio" class="bio" name="bio" rows="4" placeholder="Write something interesting about yourself..."></textarea>
+            </div>
+  
+            <button type="submit">Save Changes</button>
+          </form>
+       </div>
+      </div>
+
+      <div class="footer">
+        <p> 2023 E-learning Platform. All rights reserved.</p>  
+     </div>
+    </div>
+  </div>
+  
+</body>
+</html>

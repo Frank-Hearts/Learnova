@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learnova - Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/dashboard.css"/>
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./icon/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id ="preloader">
+    <img src="./assets/img/11.png" alt="preloader image" class="preloader-image">
+ </div>
+ <div class="all-dashboard"> 
+    <!--=========================== Sidebar ================-->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <img src="./assets/img/11.png" alt="" width="80%">
+      </div>
+
+      <label>General</label>
+      <div class="side-item-dashboard">
+        <i class="fa fa-tachometer-alt"></i>
+        <a class="side-link-active" href="#">Dashboard</a>
+      </div>
+      <div class="side-item">
+        <i class="fa fa-book-open"></i>
+        <a class="side-link" href="./enrolled.html">Enrolled Courses</a>
+      </div>
+      <div class="side-item">
+        <i class="fa fa-person"></i>
+        <a class="side-link" href="./profile.html">Profile Info</a>
+      </div>
+      <div class="side-item">
+        <i class="fa fa-medal"></i>
+        <a class="side-link" href="#">Quiz Attempts</a>
+      </div>
+      <div class="side-item">
+        <i class="fa fa-star"></i>
+        <a class="side-link" href="#">Recommended</a>
+      </div>
+      <div class="side-item">
+        <i class="fa fa-dollar"></i>
+        <a class="side-link" href="./pricing.html">Pricing</a>
+      </div>
+
+
+      <div class="other">
+        <label>Other User Pages</label>
+        <div class="side-item">
+          <i class="fa fa-cog"></i>
+          <a class="side-link" href="#">Account Settings</a>
+        </div>
+        <div class="side-item">
+          <i class="fa fa-question-circle"></i>
+          <a class="side-link" href="#">Support</a>
+        </div>
+        <div class="side-item">
+          <i class="fa fa-arrow-up-from-bracket"></i>
+          <a class="side-link" href="#">Log out</a>
+        </div>
+      </div>
+    </div>
+    <!-- =============== end of sidebar ================= -->
+  
+    <!--========================= Main Content ===============================-->
+    <div class="main-content">
+
+      <!--====================== navbar  ==============-->
+      <div class="all-navbar" id="allNavbar">
+        <div class="navbar-content">
+          <div class="nav-left">
+            <div class="toggle-icon">
+              <i class="fa fa-bars"></i>
+            </div>
+            <div class="search">
+              <input type="search" placeholder="Search for courses...">
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+          <div class="nav-right">
+            <i class="fa fa-bell"></i>
+            <i class="fa fa-globe"></i>
+            <div class="nav-right-img">
+              <img src="./assets/img/profile-pic-illutrations.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--====================== end of navbar  ==============-->
+
+      <!--=============== main content (Welcome card) ============-->
+      <div class="all-main-content">
+        <div class="main-content-left">
+          <div class="welcome-card">
+            <div class="welcome-card-body">
+              <div class="all-card-title">
+                <h3 class="card-title">Welcome back, Frank!</h3>
+                <p class="card-text">Continue your learning journey with personalized recommendations based on your progress and achievements.</p>
+              </div>
+              <div class="welcome-img">
+                <img src="./assets/img/welcome-card-img.png" alt="" style="height: 300px;" alt="Learning illustrations">
+            </div>
+            </div>
+          </div>
+
+         <!--============= Progress summary ==========-->
+          <div class="all-learning">
+            <div class="learning-header">
+              <h5>Your Learning Progress</h5>
+            </div>
+            <div class="course-body">
+              <div class="course-pro">
+                <h5 class="course-enrolled">12</h5>
+                <p class="text-muted">Courses Enrolled</p>
+              </div>
+              <div class="course-pro">
+                <h5 class="course-in-progress">9</h5>
+                <p class="text-muted">Courses in Progress</p>
+              </div>
+              <div class="course-pro">
+                <h5 class="course-completed">4</h5>
+                <p class="text-muted">Courses Completed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="all-current-course">
+            <div class="current-course-header">
+              <h4>Current Courses Progress</h4>
+            </div>
+            <div class="current-course-content">
+              <div class="web-dev">
+                <img src="./assets/img/web dev.jpg" alt="" width="100%">
+  
+                <h3>Web Development</h3>
+                <p>
+                  <span>By:  Miss. Racheal Wong</span>
+                  <span>Master the art of online marketing, branding, and content strategies.</span>
+                </p>
+                <div class="rate">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h6>78%</h6>
+                <div class="outer-bar">
+                  <div class="inner-bar-1"></div>
+                </div>
+              </div>
+              <div class="data-science">
+                <img src="./assets/img/data science.jpg" alt="" width="100%">
+  
+                <h3>Data Science</h3>
+                <p>
+                  <span>By:  Miss. Racheal Wong</span>
+                  <span>Master the art of online marketing, branding, and content strategies.</span>
+                </p>
+                <div class="rate">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h6>55%</h6>
+                <div class="outer-bar">
+                  <div class="inner-bar-2"></div>
+                </div>
+              </div>
+              <div class="digital-marketing">
+                <img src="./assets/img/photoshop.jpg" alt="" width="100%">
+  
+                <h3>Digital Marketing</h3>
+                <p>
+                  <span>By:  Miss. Racheal Wong</span>
+                  <span>Master the art of online marketing, branding, and content strategies.</span>
+                </p>
+                <div class="rate">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+                <h6>20%</h6>
+                <div class="outer-bar">
+                  <div class="inner-bar-3"></div>
+                </div>
+              </div>
+              <div class="cybersecurity">
+                <img src="./assets/img/cybers.jpg" alt="" width="100%">
+  
+                <h3>Cyber Security</h3>
+                <p>
+                  <span>By:  Mr. Chijioke Prosper</span>
+                  <span>Protect systems and networks from cyber threats with this crash course.</span>
+                </p>
+                <div class="rate">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+                <h6>35%</h6>
+                <div class="outer-bar">
+                  <div class="inner-bar-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-recommended-course">
+            <div class="recommended-course-header">
+              <h4>Recommended Courses</h4>
+            </div>
+              <div class="recommended-course-content">
+                <div class="web-dev">
+                  <img src="./assets/img/web dev.jpg" alt="" width="100%">
+    
+                  <h3>Web Development</h3>
+                  <p>Master the art of online marketing, branding, and content strategies.</p>
+                  <div class="recommended">
+                    <img src="./assets/img/stylish-african-american-plus-size-model-against-wooden-cafe-winter-day.jpg" alt="">
+                    <p>By:  Mr. Daiel Ezeali</p>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <button>Get Started</button>
+                  </div>
+                </div>
+
+                <div class="data-science">
+                  <img src="./assets/img/data science.jpg" alt="" width="100%">
+    
+                  <h3>Data Science</h3>
+                  <p>Master the art of online marketing, branding, and content strategies.</p>
+
+                  <div class="recommended">
+                    <img src="./assets/img/young-handsome-african-man-with-crossed-arms-blue-wall.jpg" alt="">
+                    <p>By:  Mr. Moses Uche</p>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+
+                    <button>Get Started</button>
+                  </div>
+                </div>
+
+                <div class="digital-marketing">
+                  <img src="./assets/img/photoshop.jpg" alt="" width="100%">
+    
+                  <h3>Digital Marketing</h3>
+                  <p>Master the art of online marketing, branding, and content strategies.</p>
+
+                  <div class="recommended">
+                    <img src="./assets/img/stylish-african-american-plus-size-model-against-wooden-cafe-winter-day.jpg" alt="">
+                    <p>By:  Miss. Racheal Amara</p>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <button>Get Started</button>
+                  </div>
+                </div>
+
+                <div class="cybersecurity">
+                  <img src="./assets/img/cybers.jpg" alt="" width="100%">
+    
+                  <h3>Cyber Security</h3>
+                  <p>Protect systems and networks from cyber threats with this crash course.</p>
+                  
+                  <div class="recommended">
+                    <img src="./assets/img/stylish-african-american-plus-size-model-against-wooden-cafe-winter-day.jpg" alt="">
+                    <p>By:  Mr. Chijioke Prosper</p>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <button>Get Started</button>
+                  </div>
+                </div>
+              </div>
+          </div> 
+          
+          <!--============= end of Progress summary ==========-->
+       </div>
+       <div class="main-content-right">
+          <div class="all-card">
+            <div class="card-header">
+              <h6 class="font-weight-bold">Recent Achievements</h6>
+            </div>
+            <div class="card-body">
+              <div class="card-1">
+                <div class="card-1-icon">
+                  <i class="fa fa-trophy text-warning fa-2x"></i>
+                </div>
+                <div class="card-text-content">
+                  <h6>Course Completed!👏🏾</h6>
+                  <p class="text-muted small">Digital Marketing Fundamentals</p>
+                  <small class="text-muted">2 days ago</small>
+                </div>
+              </div>
+              <div class="card-1">
+                <div class="card-1-icon">
+                  <i class="fa fa-medal text-info fa-2x"></i>
+                </div>
+                <div class="card-text-content">
+                  <h6>Perfect Quiz Score!</h6>
+                  <p class="text-muted small">Web Development Quiz 2</p>
+                  <small class="text-muted">1 week ago</small>
+                </div>
+              </div>
+              <div class="card-1">
+                <div class="card-1-icon">
+                  <i class="fas fa-clock text-warning fa-2x"></i>
+                </div>
+                <div class="card-text-content">
+                  <h6>5-Day Streak</h6>
+                  <p class="text-muted small">Consistent learning</p>
+                  <small class="text-muted">2 weeks ago</small>
+                </div>
+              </div>
+            </div>
+        </div>
+       </div>
+     </div>
+
+      <div class="footer">
+        <p> 2023 E-learning Platform. All rights reserved.</p>  
+     </div>
+   </div>
+ </div>
+
+
+  <script src="./assets/js/dashboard.js"></script>
+  <script src="./dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
