@@ -516,6 +516,10 @@
     display: none;
   }
   .sidebar-2{
+    display: none;
+  }
+  .nav-right{
+    display: none;
   }
   .welcome-card-body{
     display: block;
