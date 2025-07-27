@@ -275,4 +275,9 @@
     padding: 5px 15px;
     font-size: 14px;
   }
+    #preloader img {
+    width: 250px;
+    height: 100px;
+    animation: zoomInOut 3s ease-in-out infinite alternate;
+  }
 }
