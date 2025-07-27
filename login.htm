@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./icon/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Login to Learnova</title>
 </head>
@@ -33,16 +32,18 @@
         <div class="login-box margin">
             <h4>Login To Learnova</h4>
             <p>Get access to your Orders, Wishlist and Recommendations.</p>
-            <form id="login-form" method="post">
+            <form id="login-form" autocomplete="on">
                 <div class="email-details">
-                    <input type="email" name="email" id="login-email" placeholder="">
-                    <label for="">Email</label>
+                    <input type="email" id="login-email" autocomplete="username" placeholder="">
+                    <label for="login-email">Email</label>
                     <span class="error-msg" id="login-email-error"></span>
                 </div>
                 <div class="password-details">
-                    <input type="password" name="password" id="login-password" placeholder="">
-                    <span class="toggle-password far fa-eye-slash" id="toggle-password" style="cursor:pointer;"></span>
-                    <label for="">Password</label>
+                    <input type="password" id="login-password" autocomplete="current-password" placeholder="">
+                    <div class="password-icon">
+                        <i class="toggle far fa-eye-slash" id="toggle-password"></i>
+                    </div>
+                    <label for="login-password">Password</label>
                     <span class="error-msg" id="login-password-error"></span>
                 </div>
                 <div class="forget">
@@ -62,9 +63,9 @@
     <!-- end of input section -->
     </div>
 
-    <script src=".assets/js/login.js"></script>
+    <script src="./assets/js/login.js"></script>
     <script src="./assets/js/preloader.js"></script>
-    <script src=".assets/js/preloader-nav.js"></script>
-    <script src="./dist/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/preloader-nav.js"></script>
+    <!-- <script src="./dist/js/bootstrap.bundle.js"></script> -->
 </body>
 </html>

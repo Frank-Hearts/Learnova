@@ -516,16 +516,6 @@
     display: none;
   }
   .sidebar-2{
-    /* display: block;
-      position: fixed;
-      top: 0;
-      left: -500px;
-      height: 100vh;
-      background-color:var(--side);
-      width: 70%;
-      transition: left 1s ease;
-      display: none;
-      z-index: 10000; */
   }
   .welcome-card-body{
     display: block;

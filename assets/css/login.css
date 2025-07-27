@@ -156,11 +156,12 @@
 .password-details {
   position: relative;
   margin-top: 20px;
+  width: 100%;
 }
 
 .password-details input {
   width: 100%;
-  padding: 12px 40px 12px 10px;
+  padding: 12px 0 12px 12px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -175,10 +176,9 @@
   left: 10px;
   color: #888;
   background: #f9f9f9;
-  padding: 0 4px;
+  padding: 0 2px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  pointer-events: none;
   transition: 0.3s ease all;
 }
 
@@ -193,15 +193,15 @@
   font-size: 13px;
   color: var(--primary-color);
 }
-.toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: var(--accent-color);
-    font-size: 16px;
-    user-select: none;
+.password-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--accent-color);
+  font-size: 16px;
+  user-select: none;
 }
 
 .email-details {
@@ -226,7 +226,7 @@
   left: 10px;
   color: #888;
   background: #f9f9f9;
-  padding: 0 4px;
+  padding: 0 2px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   pointer-events: none;
